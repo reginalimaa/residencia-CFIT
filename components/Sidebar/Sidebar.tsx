@@ -1,23 +1,34 @@
-'use client';
+'use client'
 
-import React, { useState } from 'react';
-import UserProfile from '../UserProfile/UserProfile';
+import React from 'react';
+import { slide as Menu } from 'react-burger-menu';
 import { MenuOutlined } from '@ant-design/icons';
-import './styles.css';
 
-export default function Sidebar() {
-  const [sidebarVisible, setSidebarVisible] = useState(false);
+import './sidebar.css'
 
-  const toggleSidebar = () => {
-    setSidebarVisible(!sidebarVisible);
-  };
+class Sidebar extends React.Component {
+  showSettings(event: React.MouseEvent) {
+    event.preventDefault();
+  }
 
-  return (
-    <div >
-      <div className="menu-icon" onClick={toggleSidebar}>
-        <MenuOutlined style={{ fontSize: '28px', color: 'black' }}/>
-      </div>
-
-    </div>
-  );
+  render() {
+    return (
+      <Menu>
+        <a id="home" className="menu-item" href="/">
+          Blog
+        </a>
+        <a id="about" className="menu-item" href="/about">
+          Sobre nós
+        </a>
+        <a id="contact" className="menu-item" href="/contact">
+          Fale conosco
+        </a>
+        <a onClick={this.showSettings} className="menu-item" href="">
+          Produtos e serviços
+        </a>
+      </Menu>
+    );
+  }
 }
+
+export default Sidebar;
