@@ -1,0 +1,13 @@
+.slide-item{
+  width: 343px;
+  height: 152px;
+  object-fit: cover;
+}
+
+.slides{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 16px;
+}

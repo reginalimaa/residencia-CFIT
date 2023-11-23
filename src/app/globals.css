@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  background-color: #eeeeee;
+}
+
+h3{
+  font-size: 12px;
+}
+
+p {
+  font-size: 10px;
+  color: #525252;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,41 @@
+.slide-item-promo{
+  width: 165px;
+  height: 255px;
+
+  border: 0.8px solid #A99D9D;
+}
+
+.promo-style{
+  display: flex;
+  flex-direction: column;
+  border: 0.8px solid #A99D9D;
+  width: 163px;
+  height: 255px;
+
+  align-items: center;
+  justify-content:center; 
+}
+
+.title-promo{
+  font-size: 24px;
+  font-weight: bolder;
+
+  margin-top: 25px;
+  margin-bottom: 40px;
+
+  width: 126px;
+}
+
+.off-promo{
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.subtitle-promo{
+  font-size: 20px;
+  font-weight:bold;
+
+  margin-top: 40px;
+  margin-bottom: 20px;
+   
+}

@@ -1,0 +1,27 @@
+input {
+  width: 285px;
+  height: 45px;
+  border-radius: 8px;
+  border: none;
+}
+
+.div-search{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 341px;
+  
+}
+
+.div-search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background-color: #383434;
+}

@@ -1,0 +1,21 @@
+header{
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.div-promotions {
+  width: 100%;
+  height: 54px;
+  background-color: #C6C6C6;
+}
+
+.meioca{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.name{
+  color: black;
+  font-size: 12px;
+}
