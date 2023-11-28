@@ -1,0 +1,53 @@
+.service-apresentation {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.image-productid{
+  width: 343px;
+  height: 273px;
+  margin: 0;
+}
+
+.description-products{
+  max-height: 500px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.product-buttons {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+li{
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+li p{
+  margin-left: 3px;
+  
+}
+

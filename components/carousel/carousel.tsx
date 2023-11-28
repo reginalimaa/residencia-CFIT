@@ -15,9 +15,7 @@ import { Parallax, Pagination, Navigation } from 'swiper/modules';
 export default function Carousel() {
 
   const data = [
-    { id: '1', image: 'https://botoesthetic.com.br/wp-content/uploads/2021/04/20210422_095445-1536x864.jpg'},
-    { id: '2', image: 'https://botoesthetic.com.br/wp-content/uploads/2021/04/20210422_095445-1536x864.jpg'},
-    { id: '3', image: 'https://botoesthetic.com.br/wp-content/uploads/2021/04/20210422_095445-1536x864.jpg'},
+    { id: '1', image: 'https://botoesthetic.com.br/wp-content/uploads/2021/04/20210422_095445-1536x864.jpg'}    
   ]
 
   return (

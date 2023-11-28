@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
-import { MenuOutlined } from '@ant-design/icons';
 
 import './sidebar.css'
 
