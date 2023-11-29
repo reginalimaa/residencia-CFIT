@@ -19,12 +19,15 @@ section{
 }
 
 .description-products{
-  max-height: 500px;
+  min-height: 300px;
+ 
 }
 
-p {
-  font-size: 16px;
+.description-products ol{
+  padding: 0;
+  margin: 0;
 }
+
 
 .product-buttons {
   display: flex;
@@ -44,10 +47,16 @@ li{
   flex-direction: row;
 
   align-items: center;
+  
 }
 
 li p{
   margin-left: 3px;
   
 }
+
+.teste{
+  border-bottom: 1px solid #000;
+}
+
 

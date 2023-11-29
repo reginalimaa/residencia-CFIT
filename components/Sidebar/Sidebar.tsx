@@ -14,12 +14,15 @@ class Sidebar extends React.Component {
     return (
       <Menu>
         <a id="home" className="menu-item" href="/">
+          Home
+        </a>
+        <a id="home" className="menu-item" href="/blog">
           Blog
         </a>
-        <a id="about" className="menu-item" href="/about">
+        <a id="about" className="menu-item" href="/aboutus">
           Sobre nós
         </a>
-        <a id="contact" className="menu-item" href="/contact">
+        <a id="contact" className="menu-item" href="/contactus">
           Fale conosco
         </a>
         <a onClick={this.showSettings} className="menu-item" href="">

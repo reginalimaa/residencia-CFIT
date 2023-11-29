@@ -5,7 +5,6 @@ import * as S from './styles'
 import Image from 'next/image'
 import Button from '../Button/button';
 
-
 export default function Card({ alt = '', src = '', title = '', subtitle = '', price = ''}) {
   return (
     
