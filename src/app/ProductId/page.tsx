@@ -2,7 +2,8 @@
 
 import './styles.css'
 
-import Image from 'next/image';import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PhotoProduct from '../../img/foto-do-servico.png'
 
 import { QqOutlined } from '@ant-design/icons';

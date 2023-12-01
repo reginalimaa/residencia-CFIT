@@ -1,0 +1,72 @@
+.image {
+  width: 100px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.summary-service {
+  display: flex;
+  flex-direction: column;
+
+  border: 0.5px solid #AFAFAF;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.summary-service-div1 {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.summary-service-div1 p {
+  margin-left: 5px;
+}
+
+.summary-service-div1 h3 {
+  margin-left: 5px;
+}
+
+.decision {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+
+  border: 0.5px solid #AFAFAF;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.subtotal-discount {
+  display: flex;
+  flex-direction: column;
+
+  border-top: 1px solid black;
+
+  margin-top: 40px;
+}
+
+.subtotal-price {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.aplication-discount {
+  border: 0.5px solid #AFAFAF;
+  border-radius: 5px;
+
+  padding: 25px 10px;
+}
+
+.input-button {
+  display: flex;
+  flex-direction: row;
+
+  justify-content:space-around;
+}
