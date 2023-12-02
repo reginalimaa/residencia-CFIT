@@ -11,6 +11,7 @@ export const defaultStyles = css`
   font-size: 16px;
   color: white;
   font-weight: 700;
+  align-items: center;
 `;
 
 export const smallStyles = css`

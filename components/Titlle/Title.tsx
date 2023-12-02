@@ -1,9 +1,20 @@
+import React, { ReactNode } from 'react';
+
 import './styles.css'
 
-export default function Title( {title = ''}){
-
-
-  return(
-    <h1>{ title }</h1>
-  )
+interface TitleProps {
+  title?: string;
+  children?: ReactNode;
 }
+
+const Title: React.FC<TitleProps> = ({ title, children }) => {
+  const content = title || children || ''; // Use title if available, then fallback to children, and finally an empty string
+
+  return (
+    <div className='div-title'>
+      <h1>{content}</h1>
+    </div>
+  );
+};
+
+export default Title;

@@ -1,8 +1,10 @@
 'use client'
 
-// PaymentSelection.js
-
 import { useState } from 'react';
+import './styles.css'
+import Button from '../Button/button';
+import Image from 'next/image';
+import img from '../../src/img/foto-do-servico.png'
 
 type PaymentOption = 'creditCard' | 'boleto' | 'pix';
 
@@ -16,7 +18,7 @@ const PaymentSelection = () => {
   return (
     <div>
       {/* Opção de cartão de crédito sempre expandida */}
-      <div>
+      <div className='div-option-payment'>
         <input
           type="checkbox"
           id="creditCard"
@@ -24,10 +26,59 @@ const PaymentSelection = () => {
           onChange={() => handleOptionClick('creditCard')}
         />
         <label htmlFor="creditCard">Cartão de Crédito</label>
+
+        {expandedOption === 'creditCard' && (
+          <div >
+  
+            <form action="">
+              
+              <label className='input-estyle' htmlFor="">Número</label>
+              <input  
+                placeholder='' 
+                type="text" 
+                id="cardNumber" 
+                name="cardNumber" 
+              />
+
+              <label htmlFor="">Nome do titular</label>
+              <input  
+                placeholder='' 
+                type="text" 
+                id="cardNumber" 
+                name="cardNumber" 
+              />
+
+              <label htmlFor="">Data de validade</label>
+              <input  
+                placeholder='' 
+                type="text" 
+                id="cardNumber" 
+                name="cardNumber" 
+              />
+
+              <label htmlFor="">CCV</label>
+              <input  
+                placeholder='' 
+                type="text" 
+                id="cardNumber" 
+                name="cardNumber" 
+              />
+
+              <label htmlFor="">Parcelas</label>
+              <select name="" id="">
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+              </select>
+          
+            </form>
+          
+          </div>
+        )}
       </div>
 
       {/* Opção de boleto */}
-      <div>
+      <div className='div-option-payment'>
         <input
           type="checkbox"
           id="boleto"
@@ -38,7 +89,7 @@ const PaymentSelection = () => {
       </div>
 
       {/* Opção de PIX */}
-      <div>
+      <div className='div-option-payment'>
         <input
           type="checkbox"
           id="pix"
@@ -48,18 +99,29 @@ const PaymentSelection = () => {
         <label htmlFor="pix">PIX</label>
       </div>
 
-      {/* Renderizar formulário de cartão de crédito se a opção estiver selecionada */}
-      {expandedOption === 'creditCard' && (
-        <div>
-          {/* Seu formulário de cartão de crédito aqui */}
-          <label htmlFor="cardNumber">Número do Cartão:</label>
-          <input type="text" id="cardNumber" name="cardNumber" />
-          {/* Outros campos do formulário de cartão de crédito */}
+      <section className='resumo-compra'>
+        
+        <h3>Resumo da sua compra</h3>
+        
+        <div className='resumo-compra-itens'>
+          <Image 
+            src={img} 
+            alt=''
+            width={66}
+            height={63}
+          />
+          <div className='resumo-compra-textos'>
+            <span>Limpeza de pele</span>
+            <p>Limpeza de Pele Avançada, usando técnicas especializadas para eliminar cravos e revitalizar sua pele. </p>
+          </div>
+          <p className='price'>R$ 00,00</p>
         </div>
-      )}
+      </section>
 
-      {/* Outros elementos adicionais para outras opções selecionadas */}
+      <Button type='submit' label='Finalizar compra'> </Button>
     </div>
+
+    
   );
 };
 

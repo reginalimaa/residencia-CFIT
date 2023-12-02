@@ -1,0 +1,11 @@
+.box-politcs-payment{
+  border: 0.5px solid #888888;
+  border-radius: 5px;
+
+  padding: 10px;
+}
+
+.box-politcs-payment-text {
+  max-height: 200px;
+  overflow: auto;
+}
