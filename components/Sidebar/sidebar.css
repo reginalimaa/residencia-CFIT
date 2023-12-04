@@ -4,11 +4,6 @@
   flex-direction: row;
 }
 
-img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
 
 .bm-burger-button {
   position: absolute;

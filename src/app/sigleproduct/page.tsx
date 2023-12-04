@@ -1,3 +1,5 @@
+/*
+
 'use client'
 
 import './styles.css'
@@ -99,3 +101,14 @@ export default function ProductId(){
   )
 
 }
+*/
+
+import React from "react";
+
+const SingleProduct = ({ searchParams }) => {
+  console.log(searchParams._id)
+  
+  return <div>Sigle Product</div>
+}
+
+export default SingleProduct;

@@ -1,4 +1,4 @@
-import Card from "../../components/CardProduct/card";
+import Card from "../../components/Products/card";
 import Image from "next/image";
 import Header from "../../components/Header/Header";
 import CardApresentation from "../../components/CardApresentation/CardApresentation";
@@ -7,11 +7,19 @@ import CarouselPromotions from "../../components/carouselPromotions/carouselProm
 
 import img from  '../img/img.jpg'
 
+const getData = async () => {
+  const res = await fetch("http://localhost:3001/api/products");
+  if(!res.ok){
+    throw new Error("Failed to fetch data")
+  }
+  return res.json();
+};
+
 export default function Home() {
   return (
     <>
     
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      
       <Header></Header>
       <CardApresentation></CardApresentation>
         <Card
@@ -25,7 +33,7 @@ export default function Home() {
 
         <CarouselPromotions></CarouselPromotions>
             
-      </main>
+      
     </>
   )
 }

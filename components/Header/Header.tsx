@@ -15,11 +15,9 @@ export default function Header({post = ''}){
       <div className="meioca">
         <Sidebar></Sidebar>
         <p className="name">NEW ESTÉTICA</p>
-        <ShoppingCartOutlined style={{ fontSize: '28px', color: 'blcack' }}/>
+        <ShoppingCartOutlined style={{ fontSize: '28px', color: 'black' }}/>
       </div>
-
       <Search></Search>
-    
     </header>
 
   )

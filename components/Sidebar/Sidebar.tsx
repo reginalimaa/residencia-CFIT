@@ -16,7 +16,7 @@ class Sidebar extends React.Component {
         <a id="home" className="menu-item" href="/">
           Home
         </a>
-        <a id="home" className="menu-item" href="/blog">
+        <a id="blog" className="menu-item" href="/blog">
           Blog
         </a>
         <a id="about" className="menu-item" href="/aboutus">
@@ -25,7 +25,7 @@ class Sidebar extends React.Component {
         <a id="contact" className="menu-item" href="/contactus">
           Fale conosco
         </a>
-        <a onClick={this.showSettings} className="menu-item" href="">
+        <a id='products-services' className="menu-item" href="/allproducts">
           Produtos e serviços
         </a>
       </Menu>
