@@ -13,9 +13,8 @@ import { Pagination } from 'swiper/modules';
 export default function CarouselPromotions() {
 
   const data = [
-    { id: '1', image: 'https://assets.folhavitoria.com.br/images/04b95e70-3b81-0138-b7d3-0a58a9feac2a--minified.jpg'},
-    { id: '2', image: 'https://botoesthetic.com.br/wp-content/uploads/2021/04/20210422_095445-1536x864.jpg'},
-    { id: '3', image: 'https://botoesthetic.com.br/wp-content/uploads/2021/04/20210422_095445-1536x864.jpg'},
+    { id: '1', image: 'https://img.freepik.com/fotos-gratis/atraente-alegre-mulher-com-orquidea-flor_23-2148105371.jpg?w=360&t=st=1701782871~exp=1701783471~hmac=3a61683903a627c5972f863789f8e81c66e4d1fa9e7212942795dd3e98862811'},
+    
   ]
 
   return (

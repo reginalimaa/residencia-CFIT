@@ -36,4 +36,15 @@ main {
   min-height: 100vh;
 }
 
+.section-cards-pagprin {
+  overflow: auto;
+}
 
+.title-promotionsforyou {
+  text-align: center;
+  width: 183px;
+
+  margin: 0 auto;
+  
+ 
+}

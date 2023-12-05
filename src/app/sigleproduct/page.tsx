@@ -1,4 +1,4 @@
-/*
+
 
 'use client'
 
@@ -12,6 +12,7 @@ import { QqOutlined } from '@ant-design/icons';
 import { HeartOutlined } from '@ant-design/icons';
 import { Button } from '../../../components/Button/styles';
 import Header from '../../../components/Header/Header';
+import Link from 'next/link';
 
 
 export default function ProductId(){
@@ -41,10 +42,12 @@ export default function ProductId(){
                        padding: "6px"
                       }}
             />
-            <Button
-              type="button" 
-              variant="average" 
-            > AGENDAR HORÁRIO </Button>
+            <Link href={'/agendamento'}>
+              <Button type="button" variant="average">
+                AGENDAR HORÁRIO 
+              </Button>
+            </Link>
+            
           </div>
           
           <div className="about-products">
@@ -101,14 +104,3 @@ export default function ProductId(){
   )
 
 }
-*/
-
-import React from "react";
-
-const SingleProduct = ({ searchParams }) => {
-  console.log(searchParams._id)
-  
-  return <div>Sigle Product</div>
-}
-
-export default SingleProduct;
